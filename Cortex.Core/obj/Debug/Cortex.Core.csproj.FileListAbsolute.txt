@@ -1,0 +1,4 @@
+C:\Users\user\Desktop\12m consaltant\Cortex\Cortex.Core\bin\Debug\Cortex.Core.dll
+C:\Users\user\Desktop\12m consaltant\Cortex\Cortex.Core\bin\Debug\Cortex.Core.pdb
+C:\Users\user\Desktop\12m consaltant\Cortex\Cortex.Core\obj\Debug\Cortex.Core.dll
+C:\Users\user\Desktop\12m consaltant\Cortex\Cortex.Core\obj\Debug\Cortex.Core.pdb

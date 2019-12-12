@@ -1,0 +1,60 @@
+﻿@model Cortex.Domain.WebUI.PersonalVM
+
+@{
+    ViewBag.Title = "StokEkstre";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section PageScripts
+{
+    <script src='@Url.Content("~/Scripts/pages/Personal/PersonalList.js")'></script>
+}
+@section BrundCrumb{
+    @Html.BuildBrandCrumb()
+}
+<div class="row">
+    <div class="col-xs-12">
+        <div class="box">
+            <div class="box-header">
+            </div>
+            <div class="box-body">
+                <div id="example1_wrapper" class="dataTables_wrapper form-inline dt-bootstrap">
+                    <div class="col-sm-12">
+                        <table id="tablePersonalList" class="table table-striped table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>PersonalName</th>
+                                    <th>Phone</th>
+                                    <th>Task</th>
+                                    <th>Departman</th>
+                                    <th>Email</th>
+                                    <th>Password</th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    jQuery(document).ready(function () {
+        var initObject = [];
+        var urls = {
+            gridLoadUrl: '@Url.Action("GetStokDefinitionList", "Home")'
+
+        };
+
+        // obje içerisnde kullanımını görmeniz için ekliyorum
+        var languageItems = {
+            editButtonText : "Edit"
+        };
+
+        initObject.urls = urls;
+        initObject.languageItems = languageItems;
+
+        Personallist.init(initObject);
+    });
+</script>
